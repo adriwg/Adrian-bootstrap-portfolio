@@ -13,8 +13,21 @@ body {
     color: #333;
 }
 
-/** Main Navigation **/
+/** Buttons **/
+.btn_wrapper {
+    width:100%;
+    padding: 10px;
+}
 
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/** Main Navigation **/
 #main-navigation {
     background-color: var(--primary-color) !important;
 }
@@ -45,6 +58,11 @@ body {
 
 nav ul li {
     margin-right: 40px;
+}
+
+/** Section - About **/
+#about .btn-wrapper {
+    text-align: right;
 }
 
 /** Hero Banner **/
@@ -155,6 +173,57 @@ section .section-title h3{
     right: 20px;
     bottom: 20px;
     background: url("../images/right_arrow.png") 0 0 no-repeat;
+}
+
+
+/** Section - Skills **/
+#skills-container {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#skills-container li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#skills-container li .skill-name{
+    width:100px;
+}
+
+#skills-container li .skill-level{
+    flex-grow: 1;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #efefef;
+    overflow: hidden;
+    padding: 2px;
+}
+
+#skill-level-html,
+#skill-level-css{
+    width: 100%;
+}
+
+#skill-level-javascript {
+    width: 80%;
+}
+
+#skill-level-react {
+    width: 50%;
+}
+
+.level {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    height: 16px;
+    -webkit-box-shadow:inset 1px 1px 8px 0 #2B4A82;
+    box-shadow:inset 1px 1px 8px 0 #2B4A82;
 }
 
 
