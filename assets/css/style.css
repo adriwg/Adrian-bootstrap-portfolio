@@ -1,0 +1,162 @@
+:root {
+    --card_bdr_radius: 15px;
+    --light_grey: #e3e3e3;
+    --primary-color:#2B4A82;
+    --secondary-color: #367DC9;
+    --secondary-variant: #44CDFC;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+}
+
+/** Main Navigation **/
+
+#main-navigation {
+    background-color: var(--primary-color) !important;
+}
+
+#main-navigation .page-title {
+    color:var(--secondary-variant);
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+#main-navigation .nav-item a{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color:#FFF;
+}
+
+#main-navigation .nav-item a:hover {
+    color: var(--secondary-variant);
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+/** Hero Banner **/
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/hero-bkgd.png") 0 -50px no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    color: #000;
+}
+
+.hero-banner .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 8px solid var(--primary-color);
+    background: url("../images/profile-pic.jpg") 0 0 no-repeat;
+    background-size: contain;
+}
+
+.hero-banner h1{
+    font-weight:300;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+
+
+/** Section **/
+section {
+    border: 1px solid var(--light_grey);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: left;
+    overflow:hidden;
+}
+
+section .section-title {
+    text-align: center;
+    margin-bottom: 20px;  
+    color: var(--secondary-color);
+}
+
+section .section-title h3{
+    font-weight: 300;
+}
+
+
+/** Section - My Work **/
+#work {
+    padding: 20px 40px;
+}
+
+.cardContainer {
+    display: block;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #333;
+}
+
+.cardContainer:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.card {
+    border-radius: var(--card_bdr_radius);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 6px 14px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:  0px 6px 14px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 6px 14px 0px rgba(50, 50, 50, 0.5);
+}
+
+.card-body {
+    position: relative;
+    height: 250px;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: var(--card_bdr_radius);
+    border-top-right-radius: var(--card_bdr_radius);
+    height: 200px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.card-title {
+    line-height: 22px;
+}
+
+.card-text {
+    line-height: 20px;
+}
+
+.find_out_more {
+    position: absolute;
+    width: 32px;
+    height:32px;
+    right: 20px;
+    bottom: 20px;
+    background: url("../images/right_arrow.png") 0 0 no-repeat;
+}
+
+
+
+
