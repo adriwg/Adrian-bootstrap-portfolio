@@ -15,7 +15,7 @@ The portfolio is designed to be responsive and can be accessed through the link 
 
 ### Screenshots
 Desktop:  
-![Desktop Layout](https://adriwg.github.io/Adrian-bootstrap-portfolio/assets/images/desktop-layout.png)
+![Desktop Layout](https://adriwg.github.io/Adrian-bootstrap-portfolio/assets/images/desktop-layout2.png)
 
 Tablet:  
 ![Tablet Layout](https://adriwg.github.io/Adrian-bootstrap-portfolio/assets/images/tablet-layout.png)
