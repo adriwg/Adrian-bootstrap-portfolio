@@ -9,21 +9,26 @@
             integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/fonts.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
+        <script src="https://kit.fontawesome.com/54e0347d08.js" crossorigin="anonymous"></script>
         <title>Adrian's Bootstrap Portfolio</title>
     </head>
-
     <body>
         <!-- Main Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-navigation">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" id="main-navigation">
            <span class="page-title">My Portfolio</span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#work">My Work</a>
@@ -41,7 +46,7 @@
         <div class="jumbotron hero-banner">
             <div class="profile-pic"></div>
             <h1>Adrian Wong</h1>
-            <p class="lead">Front-End Developer and UI Designer</p>
+            <p>Front-End Developer and UI Designer</p>
         </div>
         <div class="container">
             <!-- About Me -->
@@ -58,7 +63,10 @@
                     nisi porta. Enim diam vulputate ut pharetra sit amet aliquam id.
                 </p>
                 <div class="btn-wrapper">
-                    <a href="assets/cv.pdf" class="btn btn-primary" role="button">Download My Resume</a>
+                    <a href="assets/cv.pdf" class="btn btn-primary" role="button">
+                        <i class="fa-solid fa-download fa-lg icn-download"></i>
+                        Download My Resume
+                    </a>
                 </div>
             </section>
             <!-- My Work -->
@@ -69,9 +77,24 @@
                 <div class="container-fluid">
                     <div class="row no-gutters">
                         <!-- Portfolio 1 -->
-                        <a href="https://adriwg.github.io/horiseon-landing-page/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
-                            <div class="card" style="width: 18rem;">
+                        <a href="https://adriwg.github.io/my-portfolio/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
                                 <img src="assets/images/portfolio-1.jpg" class="card-img-top"
+                                    alt="My First HTML Portfolio Landing Page Screenshot">
+                                <div class="card-body">
+                                    <h5 class="card-title">My First HTML Portfolio</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit saepe atque
+                                        hic harum suscipit exercitationem ipsam eaque.
+                                    </p>
+                                    <div class="find_out_more"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Portfolio 2 -->
+                        <a href="https://adriwg.github.io/horiseon-landing-page/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="assets/images/portfolio-2.jpg" class="card-img-top"
                                     alt="Horiseon Social Solution Services Landing Page Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">Horiseon Social Solution Services</h5>
@@ -84,24 +107,9 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- Portfolio 2 -->
-                        <a href="https://adriwg.github.io/my-portfolio/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
-                            <div class="card" style="width:18rem;">
-                                <img src="assets/images/portfolio-2.jpg" class="card-img-top"
-                                    alt="My First HTML Portfolio Landing Page Screenshot">
-                                <div class="card-body">
-                                    <h5 class="card-title">My First HTML Portfolio</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit saepe atque
-                                        hic harum suscipit exercitationem ipsam eaque.
-                                    </p>
-                                    <div class="find_out_more"></div>
-                                </div>
-                            </div>
-                        </a>
                         <!-- Portfolio 3 -->
                         <a href="https://calculator.com/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="assets/images/portfolio-3.jpg" class="card-img-top"
                                     alt="Calculator Landing Page Screenshot">
                                 <div class="card-body">
@@ -116,7 +124,7 @@
                         </a>
                         <!-- Portfolio 4-->
                         <a href="https://pastelpuzzle.com/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="assets/images/portfolio-4.jpg" class="card-img-top"
                                     alt="Pastel Puzzle Landing Page Screenshot">
                                 <div class="card-body">
@@ -131,7 +139,7 @@
                         </a>
                         <!-- Portfolio 5 -->
                         <a href="https://surfacademyuk.com/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img src="assets/images/portfolio-5.jpg" class="card-img-top"
                                     alt="Surfing Academy Landing Page Screenshot">
                                 <div class="card-body">
@@ -146,8 +154,8 @@
                         </a>
                         <!-- Portfolio 6 -->
                         <a href="https://runbuddymobile.com/" class="cardContainer col-lg-4 col-md-6 col-sm-12">
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/images/portfolio-6a.jpg" class="card-img-top"
+                            <div class="card">
+                                <img src="assets/images/portfolio-6.jpg" class="card-img-top"
                                     alt="Run Buddy Landing Page Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">Run Buddy</h5>
@@ -198,20 +206,35 @@
                 <section id="contact">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="row-item col-lg-3 col-sm-12">
-                                 <a href="tel:+44012345678901" type="button" class="btn btn-contact">+44 012345678901</a>
+                            <div class="row-item col-lg-3 col-md-6 col-sm-12">
+                                 <a href="tel:+44012345678901" type="button" class="btn btn-contact">
+                                    <span class="fa-solid fa-phone fa-lg icn-phone"></span>
+                                    +44 012345678901
+                                </a>
                             </div>
-                            <div class="row-item col-lg-3 col-sm-12">
-                                <a href="mailto:adrianwg04@gmail.com" type="button" class="btn btn-contact">adrianwg04@gmail.com</a>
+                            <div class="row-item col-lg-3 col-md-6 col-sm-12">
+                                <a href="mailto:adrianwg04@gmail.com" type="button" class="btn btn-contact">
+                                    <span class="fa-solid fa-envelope fa-lg icn-email"></span>
+                                    adrianwg04@gmail.com
+                                </a>
                             </div>
-                            <div class="row-item col-lg-2 col-sm-12">
-                                <a href="https://github.com/adriwg/Adrian-bootstrap-portfolio" type="button" class="btn btn-contact">GitHub</a>
+                            <div class="row-item col-lg-2 col-md-6 col-sm-12">
+                                <a href="https://github.com/adriwg/Adrian-bootstrap-portfolio" type="button" class="btn btn-contact">
+                                    <div class="icn-holder icn-github"></div>
+                                    GitHub
+                                </a>
                             </div>
-                            <div class="row-item col-lg-2 col-sm-12">
-                                <a href="https://twitter.com/Adrianwg22" type="button" class="btn btn-contact">Twitter</a>
+                            <div class="row-item col-lg-2 col-md-6 col-sm-12">
+                                <a href="https://twitter.com/Adrianwg22" type="button" class="btn btn-contact">
+                                    <div class="icn-holder icn-twitter"></div>
+                                    Twitter
+                                </a>
                             </div>
-                            <div class="row-item col-lg-2 col-sm-12">
-                                <a href="https://open.spotify.com/playlist/6e8VpQ400WvibQMCHD06ji?si=a66f5f69f5734a49&nd=1" type="button" class="btn btn-contact">Spotify</a>
+                            <div class="row-item col-lg-2 col-md-6 col-sm-12">
+                                <a href="https://open.spotify.com/playlist/6e8VpQ400WvibQMCHD06ji?si=a66f5f69f5734a49&nd=1" type="button" class="btn btn-contact">
+                                    <div class="icn-holder icn-spotify"></div>
+                                    Spotify
+                                </a>
                             </div>
                         </div>
                     </div>
