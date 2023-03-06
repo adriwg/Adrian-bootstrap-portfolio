@@ -11,7 +11,7 @@ N/A
 ## Usage
 
 The portfolio is designed to be responsive and can be accessed through the link on PC and mobile devices:
-[Link text](https://github.com/adriwg/Adrian-bootstrap-portfolio)
+[Link text](https://adriwg.github.io/Adrian-bootstrap-portfolio)
 
 ### Screenshots
 Desktop:  
