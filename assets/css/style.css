@@ -53,6 +53,7 @@ body {
 
 #main-navigation .navbar-toggler {
     border-color: transparent;
+    padding: 0;
 }
 
 #main-navigation .navbar-toggler-icon {
@@ -328,7 +329,6 @@ footer #contact {
 
     .hero-banner {
         padding: 1rem 1rem 0 1rem;
-        margin-top: 56px;
     }
 
     .hero-banner .profile-pic {
